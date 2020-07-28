@@ -1,0 +1,72 @@
+h1.font-eng-fredoka {
+    margin: 30px 30px 30px 0px;
+}
+
+.h1, h1 {
+    font-size: 3rem;
+}
+
+.p-3.mb-2.rounded.text-white.font-thai-mali {
+    background-color: lightcoral;
+}
+
+.one.p-3.mb-2.rounded.text-white.font-thai-mali {
+    background-color: plum;
+}
+
+.two.p-3.mb-2.rounded.text-white.font-thai-mali {
+    background-color: skyblue;
+}
+
+.three.p-3.mb-2.rounded.text-white.font-thai-mali {
+    background-color: rgb(113, 201, 113);
+    margin-bottom: 20px;
+}
+
+.alert.alert-info.font-thai-mali {
+    margin-top: 20px;
+}
+
+img.rounded-pill.d-block.w-100 {
+    margin: 30px 0px 30px 0;
+}
+
+.alert.alert-warning.font-thai-mali {
+    margin: 20 0 30px 0;
+}
+
+button.btn.btn-danger {
+    margin: 25px 0px 30px;
+}
+
+img.rounded {
+    margin: 20px 0px 20px 0px;
+}
+
+button.btn.btn-danger.dropdown-toggle.dropdown-toggle-split {
+    margin: 25px -14px 30px 0px;
+}
+
+.dropdown-menu.show {
+    margin: 0px;
+}
+
+.alert.alert-danger.font-thai-mali {
+    margin: 30px 0 30px 0;
+}
+
+
+/* font */
+
+.font-thai-sriracha{
+    font-family: 'Sriracha', cursive;
+}
+
+.font-eng-fredoka{
+    font-family: 'Fredoka One', cursive;
+}
+
+.font-thai-mali{
+    font-family: 'Mali', cursive;
+}
+
