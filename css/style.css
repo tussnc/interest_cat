@@ -70,3 +70,49 @@ button.btn.btn-danger.dropdown-toggle.dropdown-toggle-split {
     font-family: 'Mali', cursive;
 }
 
+
+.responsive_category  {
+    width: 300%;
+    height: 150;
+  }
+.responsive{
+    width: auto;
+    height: 20;
+}
+
+.table table-bordered font-thai-mali {
+    width: 10%;
+    height: 20;
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+    iframe{
+        width: fit-content;
+    }
+    #content{
+        flex-direction: column;
+    }
+    .container td:nth-child(4),
+    .container th:nth-child(4) { display: none; }
+}
+
+
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -ms-overflow-style:
+    -ms-autohiding-scrollbar;
+}
+
+.table {
+   display: table;
+   border-collapse: separate;
+   border-spacing: 2px;
+   border-color: #333;
+   border-width: 1px;
+   border-style: solid;
+}
