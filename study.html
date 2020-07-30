@@ -1,6 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- day -->
+    <style type="text/css">#sun{ visibility: hidden;}</style>
+    <style type="text/css">#mon{ visibility: hidden;}</style>
+    <style type="text/css">#tue{ visibility: hidden;}</style>
+    <style type="text/css">#wen{ visibility: hidden;}</style>
+    <style type="text/css">#thu{ visibility: hidden;}</style>
+    <style type="text/css">#fri{ visibility: hidden;}</style>
+    <style type="text/css">#sat{ visibility: hidden;}</style>
+
+    <!-- subject -->
+    <style type="text/css">#project{ visibility: hidden;}</style>
+    <style type="text/css">#web{ visibility: hidden;}</style>
+    <style type="text/css">#web2{ visibility: hidden;}</style>
+    <style type="text/css">#ip{ visibility: hidden;}</style>
+    <style type="text/css">#ppl{ visibility: hidden;}</style>
+    <style type="text/css">#cloud{ visibility: hidden;}</style>
+    <style type="text/css">#is{ visibility: hidden;}</style>
+    <style type="text/css">#ip2{ visibility: hidden;}</style>
+    <style type="text/css">#ppl2{ visibility: hidden;}</style>
+    <style type="text/css">#is2{ visibility: hidden;}</style>
+    <style type="text/css">#music{ visibility: hidden;}</style>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study</title>
@@ -27,7 +49,7 @@
           <strong>ภาคเรียนที่ 1 ปีการศึกษา 2563</strong> 
       </div>
       
-        <table class="table table-bordered font-thai-mali" style="margin-top: 30px; background-color: white;">
+        <table class="table table-bordered font-thai-mali" style="margin-top: 30px; background-color: white; margin-bottom: 30px;">
           <thead>
               <tr style="background-color:honeydew;" class="text-dark">
                   <th scope="col">วัน/เวลา</th>
@@ -50,19 +72,40 @@
                   <th
                       scope="row"
                       style="background-color: honeydew;"
-                      class="text-dark">อาทิตย์</th>
+                      class="text-dark"> <a href="sun" onclick="inter=setInterval('ShowSun()',3);return false;">อาทิตย์</a>
                       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
                       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>                            
-              </tr>
+                
+                      <script>
+                          function ShowSun(){sun = document.getElementById("sun");
+                          sun.style.visibility = 'visible';
+                          }
+                      </script>
+                    </th>
+            </tr>
 
               <tr>
                 <th
                     scope="row"
                     style="background-color: honeydew;"
-                    class="text-dark">จันทร์</th>
+                    class="text-dark"> <a href="mon" onclick="inter=setInterval('ShowMon()',3);return false;">จันทร์</a>
+                
+                    <script>
+                         function ShowMon(){mon = document.getElementById("mon");
+                         mon.style.visibility = 'visible';
+                         }
+                    </script>
+                </th>
                     <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
                     <td></td><td></td><td></td><td></td>
-                    <td align="center" colspan="4" style="background-color: rgb(106, 201, 245);" class="text-white"> 01418499 (201)</td>
+                    <td align="center" colspan="4" style="background-color: rgb(106, 201, 245);">
+                        <a  href="01418499" onclick="inter=setInterval('ShowProject()',3);return false;" class="text-white">01418499 (201)</a>
+                    <script>
+                            function ShowProject(){project = document.getElementById("project");
+                            project.style.visibility = 'visible';
+                            }
+                    </script>
+                    </td>
                     <td></td><td></td><td></td>
             </tr>
 
@@ -70,11 +113,28 @@
                   <th
                       scope="row"
                       style="background-color:honeydew;"
-                      class="text-dark">อังคาร</th>
+                      class="text-dark">
+                      <a href="tue" onclick="inter=setInterval('ShowTue()',3);return false;">อังคาร</a>
+                      
+                      <script>
+                              function ShowTue(){tue = document.getElementById("tue");
+                              tue.style.visibility = 'visible';
+                              }
+                      </script>
+                </th>
                   <td></td><td></td><td></td><td></td>
-                  <td align="center" colspan="4" style="background-color: rgb(86, 216, 155);" class="text-white">01418442 (200)</td>
+                  <td align="center" colspan="4" style="background-color: rgb(86, 216, 155);"> 
+                    <a  href="01418442" onclick="inter=setInterval('ShowWeb()',3);return false;"  class="text-white">01418442 (200)</a>
+                <script>
+                        function ShowWeb(){web = document.getElementById("web");
+                        web.style.visibility = 'visible';
+                        }
+                </script>
+                </td>
                   <td></td><td></td><td></td><td></td><td></td>
-                  <td align="center" colspan="4" style="background-color: rgb(86, 216, 155);" class="text-white">01418442 (200)</td>
+                  <td align="center" colspan="4" style="background-color: rgb(86, 216, 155);" class="text-white"> 
+                    01418442 (200)
+                </td>
                   <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
               </tr>
 
@@ -82,12 +142,49 @@
                   <th
                       scope="row"
                       style="background-color:honeydew;"
-                      class="text-dark">พุธ</th>
-                      <td align="center" colspan="3" class="text-white bg-warning">01418341 (200)</td>
-                      <td align="center" colspan="3" style="background-color: rgb(197, 175, 238);"class="text-white">01418216 (200)</td>
+                      class="text-dark">
+                      <a href="wen" onclick="inter=setInterval('ShowWen()',3);return false;">พุธ</a>
+                     
+                    <script>
+                            function ShowWen(){wen = document.getElementById("wen");
+                            wen.style.visibility = 'visible';
+                            }
+                    </script>
+
+                    </th>
+                      <td align="center" colspan="3" class="text-white bg-warning">
+                          <a  href="01418341" onclick="inter=setInterval('ShowIp()',3);return false;" class="text-white">01418341 (200)</a>
+                        <script>
+                                function ShowIp(){ip = document.getElementById("ip");
+                                ip.style.visibility = 'visible';
+                                }
+                        </script>
+                        </td>
+                      <td align="center" colspan="3" style="background-color: rgb(197, 175, 238);"class="text-white">
+                        <a  href="01418216" onclick="inter=setInterval('ShowPpl()',3);return false;" class="text-white">01418216 (200)</a>
+                        <script>
+                            function ShowPpl(){ppl = document.getElementById("ppl");
+                            ppl.style.visibility = 'visible';
+                            }
+                        </script>
+                    </td>
                       <td></td>
-                      <td align="center" colspan="6" style="background-color: rgb(250, 124, 176)" class="text-white">01418354 (200)</td>
-                      <td align="center" colspan="3" style="background-color:lightsalmon;" class="text-white">01418322 (200)</td>
+                      <td align="center" colspan="6" style="background-color: rgb(250, 124, 176)" class="text-white">
+                        <a  href="01418354" onclick="inter=setInterval('ShowCloud()',3);return false;" class="text-white">01418354 (200)</a>
+                        <script>
+                            function ShowCloud(){cloud = document.getElementById("cloud");
+                            cloud.style.visibility = 'visible';
+                            }
+                        </script>
+                    </td>
+                      <td align="center" colspan="3" style="background-color:lightsalmon;" class="text-white">
+                        <a  href="01418322" onclick="inter=setInterval('ShowIs()',3);return false;" class="text-white">01418322 (200)</a>
+                        <script>
+                            function ShowIs(){is = document.getElementById("is");
+                            is.style.visibility = 'visible';
+                            }
+                        </script>
+                    </td>
                       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
               </tr>
 
@@ -95,7 +192,15 @@
                   <th
                       scope="row"
                       style="background-color: honeydew;"
-                      class="text-dark">พฤหัสบดี</th>
+                      class="text-dark">
+                      <a href="thu" onclick="inter=setInterval('ShowThu()',3);return false;">พฤหัสบดี</a>
+
+                      <script>
+                              function ShowThu(){thu = document.getElementById("thu");
+                              thu.style.visibility = 'visible';
+                              }
+                      </script>
+                  </th>
                       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
                       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
               </tr>
@@ -104,11 +209,24 @@
                   <th
                       scope="row"
                       style="background-color:honeydew;"
-                      class="text-dark">ศุกร์</th>
-                      <td align="center" colspan="3" class="text-white bg-warning">01418341 (200)</td>
-                      <td align="center" colspan="3" style="background-color:rgb(197, 175, 238);" class="text-white">01418216 (200)</td>
+                      class="text-dark">
+                      <a href="fri" onclick="inter=setInterval('ShowFri()',3);return false;">ศุกร์</a>
+                      <script>
+                              function ShowFri(){fri = document.getElementById("fri");
+                              fri.style.visibility = 'visible';
+                              }
+                      </script>
+                    </th>
+                      <td align="center" colspan="3" class="text-white bg-warning" >
+                          01418341 (200)
+                        </td>
+                      <td align="center" colspan="3" style="background-color:rgb(197, 175, 238);" class="text-white">
+                        01418216 (200)
+                    </td>
                       <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-                      <td align="center" colspan="3" style="background-color:lightsalmon;" class="text-white">01418322 (200)</td>
+                      <td align="center" colspan="3" style="background-color:lightsalmon;" class="text-white">
+                        01418322 (200)
+                    </td>
                       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
               </tr>
 
@@ -116,19 +234,197 @@
                   <th
                       scope="row"
                       style="background-color: honeydew"
-                      class="text-dark">เสาร์</th>
+                      class="text-dark">
+                      <a href="sat" onclick="inter=setInterval('ShowSat()',3);return false;">เสาร์</a>
+                      
+                      <script>
+                              function ShowSat(){sat = document.getElementById("sat");
+                              sat.style.visibility = 'visible';
+                              }
+                      </script>
+                    </th>
                       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
                       <td></td><td></td><td></td><td></td>
-                      <td align="center" colspan="6" style="background-color: plum;" class="text-white">01385261 (200)</td>
+                      <td align="center" colspan="6" style="background-color: plum;" class="text-white">
+                        <a  href="01385261" onclick="inter=setInterval('ShowMusic()',3);return false;" class="text-white">01385261 (200)</a>
+                   <script>
+                        function ShowMusic(){music = document.getElementById("music");
+                        music.style.visibility = 'visible';
+                        }
+                   </script>
+                    </td>
                       <td></td>
               </tr>   
           </tbody>
       </table>
-          <nav aria-label="Page navigation example">
-            <ul class="pagination justify-content-end">
-              <li class="page-item"><a class="page-link" href="index.html">Back to Home Page</a></li>
-            </ul>
-          </nav>
+
+        <!-- ข้อความแสดงวิชาตามวัน -->
+        <div class="font-thai-mali rounded" style="background-color: rgb(245, 164, 164);"> <strong>วันอาทิตย์</strong>
+            <div id="sun">
+                <p style="text-indent: 2.5em;">ไม่มีเรียนในวันนี้</p>
+            </div>
+        </div>
+
+        <div class="font-thai-mali rounded" style="background-color:rgb(248, 237, 139);"> <strong>วันจันทร์</strong>
+            <div id="mon">
+                <p style="text-indent: 2.5em;">1.) 01418499 Computer Science Project โครงงานวิทยาการคอมพิวเตอร์ หมู่ 201 (ปฏิบัติการ) เวลา 16.30 - 18.30 น.</p>
+            </div>
+        </div>
+
+        <div class="font-thai-mali rounded" style="background-color: pink;"> <strong>วันอังคาร</strong>
+            <div id="tue">
+                <p style="text-indent: 2.5em;">1.) 01418442 Web Technology and Web Services เว็บเทคโนโลยีและเว็บบริการ หมู่ 200 (บรรยาย) เวลา 10.00 - 12.00 น.</p>
+                <p style="text-indent: 2.5em;">1.) 01418442 Web Technology and Web Services เว็บเทคโนโลยีและเว็บบริการ หมู่ 200 (ปฏิบัติการ) เวลา 14.30 - 16.30 น.</p>
+            </div>
+        </div>
+
+        <div class="font-thai-mali rounded" style="background-color: rgb(184, 250, 184);"><strong>วันพุธ</strong>
+            <div id="wen">
+                <p style="text-indent: 2.5em;">1.) 01418341 Intellectual Properties and Profressional Ethics ทรัพย์สินทางปัญญาและจรรยาบรรณวิชาชีพ หมู่ 200 เวลา 08.00 - 09.30 น.</p>
+                <p style="text-indent: 2.5em;">2.) 01418216 Principles of Programming Languages หลักภาษาโปรแกรม หมู่ 200 เวลา 09.30 - 11.00 น.</p>
+                <p style="text-indent: 2.5em;">3.) 01418354 Cloud Computing Concepts and Services การคำนวณแบบคลาวด์ หมู่ 200 เวลา 11.30 - 14.30 น.</p>
+                <p style="text-indent: 2.5em;">4.) 01418322 Principles of Information System หลักระบบสารสนเทศ หมู่ 200 เวลา 14.30 - 16.00 น.</p>                
+            </div>
+        </div>
+
+        <div class="font-thai-mali rounded" style="background-color: rgb(250, 187, 128);"><strong>วันพฤหัสบดี</strong>
+            <div id="thu">
+                <p style="text-indent: 2.5em;">ไม่มีเรียนในวันนี้</p>
+            </div>
+        </div>
+
+        <div class="font-thai-mali rounded" style="background-color: rgb(184, 229, 247);"><strong>วันศุกร์</strong>
+            <div id="fri">
+                <p style="text-indent: 2.5em;">1.) 01418341 Intellectual Properties and Profressional Ethics ทรัพย์สินทางปัญญาและจรรยาบรรณวิชาชีพ หมู่ 200 เวลา 08.00 - 09.30 น.</p>
+                <p style="text-indent: 2.5em;">2.) 01418216 Principles of Programming Languages หลักภาษาโปรแกรม หมู่ 200 เวลา 09.30 - 11.00 น.</p>
+                <p style="text-indent: 2.5em;">1.) 01418322 Principles of Information System หลักระบบสารสนเทศ หมู่ 200 เวลา 14.30 - 16.00 น.</p>
+            </div>
+        </div>
+
+        <div class="font-thai-mali rounded" style="background-color: rgb(248, 182, 248);"><strong>วันเสาร์</strong>     
+            <div id="sat">
+                <p style="text-indent: 2.5em;">1.) 01385261 Northern Thai Folk Music ดนตรีไทยภาคเหนือ หมู่ 200 เวลา 16.30 - 19.30 น.</p>
+            </div>
+        </div>
+
+        <!-- ข้อความแสดงวิชาตามวัน -->
+        <div class="font-thai-mali rounded bg-warning" style="text-align: center; font-size: 20px; margin-bottom: 20px;"> 
+            <strong>อธิบายรายวิชา</strong>
+        </div>
+
+        <div class="font-thai-mali rounded" style="background-color:honeydew;">
+            <div><strong style="background-color:khaki;">
+                <img alt="" height="38" src="https://img.kapook.com/image/icon/ann60_3.gif" style="padding:0px;margin:0px;width:41px;height:38px" width="41">
+                01418499</strong>
+                <div id="project">
+                    <p style="text-indent: 2.5em;">
+                        โครงงานวิทยาการคอมพิวเตอร์ (Computer Science Project) หน่วยกิต (บรรยาย-ปฎิบัติการ):3(0-9-5) วิชาที่ต้องเรียนมาก่อน: 01418321 
+                    <p style="text-indent: 1em;">          
+                        โครงงานที่น่าสนใจในแขนงต่างๆ ของวิทยาการคอมพิวเตอร์ Project of practical interest in various fields of computer science.</p>
+                    </p>
+                </div>
+            </div>
+
+            <div><strong style="background-color:khaki;">
+                <img alt="" height="38" src="https://img.kapook.com/image/icon/ann60_3.gif" style="padding:0px;margin:0px;width:41px;height:38px" width="41">
+                01418442</strong>
+                <div id="web">
+                    <p style="text-indent: 2.5em;">
+                        เว็บเทคโนโลยีและเว็บบริการ (Web Technology and Web Services) หน่วยกิต (บรรยาย-ปฎิบัติการ):3(2-2-5) วิชาที่ต้องเรียนมาก่อน: 01418211
+                    </p>
+                        <p style="text-indent: 1em;">          
+                            หลักการเว็บเทคโนโลยีและเว็บบริการ ข้อกำหนดมาตรฐานของเว็บเทคโนโลยี สถาปัตยกรรมและส่วนประกอบ ลักษณะการทำงานและกลไกของระบบเว็บบริการ การพัฒนาโปรแกรมสำเร็จรูปเว็บเทคโนโลยีลักษณะการทำงานและโครงแบบเอพีไอ Principles of Web technology and services. Standard specification of technology. Architecture and components. Functionalities and mechanisms of Web services systems. Development of Web technology packages. API’s functionalities and configurations.                        
+                        </p>
+                    
+                </div>
+            </div>
+ 
+            <div><strong style="background-color:khaki;">
+                <img alt="" height="38" src="https://img.kapook.com/image/icon/ann60_3.gif" style="padding:0px;margin:0px;width:41px;height:38px" width="41">
+                01418341</strong>
+                <div id="ip">
+                    <p style="text-indent: 2.5em;">
+                        ทรัพย์สินทางปัญญาและจรรยาบรรณวิชาชีพ (Intellectual Properties and Professional Ethics) หน่วยกิต (บรรยาย-ปฎิบัติการ):3(3-0-6)
+                    </p>
+                    <p style="text-indent: 1em;">          
+                        ประเภทของทรัพย์สินทางปัญญา การได้มาซึ่งลิขสิทธิ์ สิทธิแต่เพียงผู้เดียวของเจ้าของลิขสิทธิ์การละเมิดลิขสิทธิ์ การใช้โดยธรรม ใบอนุญาตของซอฟต์แวร์เสรีใบอนุญาตของซอฟต์แวร์เปิดเผยรหัส ใบอนุญาตให้ใช้โปรแกรมคอมพิวเตอร์ ครีเอทีฟคอมมอนส์สิทธิบัตร เครื่องหมายการค้าและเครื่องหมายการบริการ นโยบายส่วนบุคคล อาชญากรรมคอมพิวเตอร์กรณีศึกษา Categories of intellectual property. Acquisition of copyright. Exclusive rights of copyright holder. Copyright infringement. Fair use. Free software license. Open source software license. Shrink wrap license. Creative Commons. Patent. Trade mark and service mark. Privacy policy. Computer crime. Case studies.                    
+                    </p>
+                   
+                </div>
+            </div>
+
+            <div><strong style="background-color:khaki;">
+                <img alt="" height="38" src="https://img.kapook.com/image/icon/ann60_3.gif" style="padding:0px;margin:0px;width:41px;height:38px" width="41">
+                01418216</strong>
+                <div id="ppl">
+                    <p style="text-indent: 2.5em;">หลักภาษาโปรแกรม
+                        (Principles of Programming Languages)
+                        หน่วยกิต (บรรยาย-ปฎิบัติการ):3(3-0-6)
+                        วิชาที่ต้องเรียนมาก่อน: 01418113
+                    </p>
+                    <p style="text-indent: 1em;">          
+                        โครงสร้างการนิยามภาษา ไวยากรณ์และอรรถศาสตร์ การวิเคราะห์ศัพท์และการแจงส่วน ชนิดและโครงสร้างของข้อมูล โครงสร้างควบคุม โปรแกรมย่อย Language definition structure. Syntax and semantics. Lexical analysis and parsing. Data types and structures. Control structures. Subprograms.                    
+                    </p>
+                    
+                </div>
+            </div>
+
+            <div><strong style="background-color:khaki;">
+                <img alt="" height="38" src="https://img.kapook.com/image/icon/ann60_3.gif" style="padding:0px;margin:0px;width:41px;height:38px" width="41">
+                01418354</strong>
+                <div id="cloud">
+                    <p style="text-indent: 2.5em;">                        
+                        01418354 Cloud Computing Concepts and Services การคำนวณแบบคลาวด์ หน่วยกิต (บรรยาย-ปฎิบัติการ):3(3-0-6) วิชาที่ต้องเรียนมาก่อน 01418331        
+                    </p>
+
+                    <p style="text-indent: 1em;">   
+                        นิยามมาตรฐาน ลักษณะจำเป็น ตัวแบบบริการ ตัวแบบการติดตั้งใช้งาน สถาปัตยกรรมอ้างอิงข้อดีข้อเสียทางเทคนิค คุณค่าทางธุรกิจและกรณีศึกษา การทำเสมือน เทคโนโลยีโครงสร้างพื้นฐาน การจัดการทรัพยากร การนำมาใช้ การปกครอง ความมั่นคง ผู้ให้บริการคลาวด์สาธารณะหลัก บริการเครื่องบริการเสมือน บริการหน่วยเก็บเสมือน บริการเครือข่ายเสมือน
+                        Standard definitions. Essential characteristics. Service models. Deployment models.Reference architectures. Technical pros and cons. Business values and case studies.Virtualization. Infrastructure technologies. Resource management. Adoption. Governance.Security. Key public cloud providers. Virtual server services. Virtual storage services. Virtual                                 
+                    </p>
+                </div>
+            </div>
+
+            <div><strong style="background-color:khaki;">
+                <img alt="" height="38" src="https://img.kapook.com/image/icon/ann60_3.gif" style="padding:0px;margin:0px;width:41px;height:38px" width="41">
+                01418322</strong>
+                <div id="is">
+                    <p style="text-indent: 2.5em;">หลักระบบสารสนเทศ
+                        (Principles of Information System)
+                        หน่วยกิต (บรรยาย-ปฎิบัติการ):3(3-0-6)
+                        วิชาที่ต้องเรียนมาก่อน: 01418112 หรือ 01418114
+                    </p>
+                    <p style="text-indent: 1em;">          
+                        แนวคิดของข้อมูลและสารสนเทศ การจัดองค์การบริหาร สารสนเทศตามความต้องการของการจัดการ แนวคิดเกี่ยวกับระบบ โครงสร้างระบบสารสนเทศ วัฏจักรระบบ การพัฒนาระบบสารสนเทศ การนำระบบสารสนเทศไปทำให้เกิดผล
+                        Concept of data and information. Management organization. Information requirements of management. Systems concept. Information system structure. System life cycle. Information system development. Implementation of information systems                    
+                    </p>
+                    
+                </div>
+            </div>
+
+            <div><strong style="background-color:khaki;">
+                <img alt="" height="38" src="https://img.kapook.com/image/icon/ann60_3.gif" style="padding:0px;margin:0px;width:41px;height:38px" width="41">
+                01385261</strong>
+                <div id="music">
+                    <p style="text-indent: 2.5em;">ดนตรีพื้นเมืองไทยภาคเหนือ (Northern Thai Folk Music) หน่วยกิต (บรรยาย):3(3-0-6)
+                    </p>
+                    <p style="text-indent: 1em;">          
+                        เครื่องดนตรีและวงดนตรีบทบาทและหน้าที่ของดนตรีพื้นเมืองไทยภาคเหนือ
+                        Northern Thai folk musical instruments and ensembles; roles and
+                        functions of Northern Thai folk music.                     
+                    </p>
+                </div>   
+            </div>
+
+        </div>
+    </div>
+        
+
+
+    <nav aria-label="Page navigation example" style="margin-right: 20px;">
+        <ul class="pagination justify-content-end">
+          <li class="page-item"><a class="page-link" href="index.html">Back to Home Page</a></li>            
+        </ul>
+    </nav>
 
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
